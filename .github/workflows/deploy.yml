@@ -1,4 +1,4 @@
-name: Deploy GitHub Pages from task1
+name: Deploy GitHub Pages from TASK1
 
 on:
   push:
@@ -28,11 +28,11 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
       
-      - name: Copy task1 contents to root
+      - name: Copy TASK1 contents to root
         run: |
-          cp -r task1/* .
-          cp task1/index.html ./index.html 2>/dev/null || true
-          cp task1/style.css ./style.css 2>/dev/null || true
+          cp -r TASK1/* .
+          cp TASK1/index.html ./index.html 2>/dev/null || true
+          cp TASK1/style.css ./style.css 2>/dev/null || true
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
